@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: CategoryService
+  datasource:
+    url: jdbc:mysql://localhost:3306/categoryDB?createDatabaseIfNotExist=true
+    username: root
+    password: mysqlroot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8081
