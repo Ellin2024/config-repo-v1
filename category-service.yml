@@ -1,8 +1,10 @@
 spring:
   application:
     name: category-service
+    config:
+      import: optional:configserver:http://config-server:8888
   datasource:
-    url: jdbc:mysql://category-mysql:3306/categoryDB?createDatabaseIfNotExist=true
+    url: jdbc:mysql://category-db:3306/categoryDB?createDatabaseIfNotExist=true
     username: root
     password: mysqlroot
     driver-class-name: com.mysql.cj.jdbc.Driver
